@@ -4,7 +4,7 @@ document.getElementById('form-contato').addEventListener('submit', function(even
     // Recupera os dados do formulário
     var nome = document.getElementById('name').value;
     var email = document.getElementById('email').value;
-    var mensagem = document.getElementById('nachricht').value;
+    var mensagem = document.getElementById('message').value;
 
     // Constrói o objeto de dados para enviar
     var dados = {
@@ -14,7 +14,7 @@ document.getElementById('form-contato').addEventListener('submit', function(even
     };
 
     // Envia os dados para o serviço de e-mail usando EmailJS
-    emailjs.send('service_andressa', 'template_6kj6ldm', dados)
+    emailjs.send('service_andressa', 'template_andressac', dados)
     .then(function(response) {
         console.log('E-mail enviado com sucesso:', response);
         alert('E-mail enviado com sucesso!');
