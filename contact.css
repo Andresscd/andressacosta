@@ -1,9 +1,33 @@
 body {
     color: black;
-     background-color: white;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+     box-sizing: border-box;
+     margin: 0;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: box-shadow 0.3s ease;
+     font-size: 1rem;
+     padding: 1em;
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.5;
+     border-radius: 8px;
  
+ }
+
+     textarea {
+        width: 35%; /* Define a largura dos campos de entrada de texto para 80% */
+        padding: 25px; /* Adiciona preenchimento interno aos campos */
+        font-size: 14px; /* Define o tamanho da fonte */
+    }
+    
+    textarea {
+        height: 150px; /* Define uma altura fixa para o campo de mensagem */
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 30%; /* Define a largura dos campos de entrada de texto para 80% */
+        padding: 20px; /* Adiciona preenchimento interno aos campos */
+        font-size: 14px; /* Define o tamanho da fonte */
+    }
  ul{
      display: flex;
      justify-content: space-between;
@@ -11,6 +35,7 @@ body {
      align-items: center;
      padding: 18px;
  }
+
 
  .container {
     padding: 0px 50px;
@@ -24,7 +49,10 @@ body {
     transition: 0,8px;
 
 }
-
+.telefone {
+    font-size: 14px;
+    margin: 90px;
+}
 nav a:hover {
     color: black
 }
@@ -34,45 +62,57 @@ a {
     color: black;
     text-decoration: none;
 }
-
 button {
     background-color: white;
-        
-        border: 0cap;
-        border-radius: 0%;
-        cursor: pointer;
-        transition: 0,3s;
-        width: 150px;
-      height: 50px;
-      font-size: 16px;
-      box-shadow: 0,8;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      }
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
 
       h1 {
-        font-size: 60px;
+        font-size: 50px;
         margin: 50px;
         padding: 3px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 
+    h3{
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+    margin: 10;}
+h4{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+margin: 5;}
+
     input {
-        margin: 50px;
+        margin: 10px;
         padding-left: 30px;
     }
 
     label{
         padding: 10px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 
     .botton-secundario {
         background-color: black;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
+        font-family: 'Roboto', sans-serif; color: white;
         padding: 10px;
-        margin: 19px;
+        margin: 20px;
         border-radius: 4px;
-        border: 2cap;
+        border: 2px;
         border-bottom: 30px;
+    }
+
+    footer {
+        background-color: white;
+        text-align: center;
+        border-top: 2px solid black; /* Adiciona uma borda superior */
+        padding: 20px;
     }
