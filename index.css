@@ -1,17 +1,22 @@
 body {
    color: black;
-    background-color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background: linear-gradient(to bottom, #ffffff, #f0f0f0);
     box-sizing: border-box;
     margin: 0;
-    padding:0%
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    font-size: 1rem;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    border-radius: 8px;
+
 }
 
-head {
+header {
     margin: 50px;
     padding: 3px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    font-family: 'Roboto', sans-serif;}
 
 ul{
     display: flex;
@@ -27,14 +32,13 @@ h1{
     box-sizing: border-box;
     margin: 5px;
     padding-left: 580px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+    font-family: 'Roboto', sans-serif;}
 h2{
     padding-left: 113px;
     margin: 10px;
     text-align: left;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3{
@@ -48,7 +52,6 @@ p{
     box-sizing: content-box;
     margin: 50px;
     text-align:justify
-    
 
 }
 
@@ -56,6 +59,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
 
 img {
     border-radius: 50%;
@@ -82,28 +86,25 @@ img {
 
 }
 
-nav a:hover {
-    color: black
+button {
+    background-color: white;
+    border: none;
+    border-radius: 8px; /* Alterado para um valor fixo */
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+    font-family: 'Roboto', sans-serif;
 }
 
-button {
-background-color: white;
-    
-    border: 0cap;
-    border-radius: 0%;
-    cursor: pointer;
-    transition: 0,3s;
-    width: 150px;
-  height: 50px;
-  font-size: 16px;
-  box-shadow: 0,8;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+nav a:hover {
+    color: black;
+}
 
 footer {
-background-color: white;
-text-align:center;
-text-decoration:double;
-display:flex;
-
+    background-color: white;
+    text-align: center;
+    border-top: 2px solid black; /* Adiciona uma borda superior */
+    padding: 20px;
 }
