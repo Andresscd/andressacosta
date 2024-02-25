@@ -1,121 +1,121 @@
 body {
-    color: black;
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-     box-sizing: border-box;
-     margin: 0;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     transition: box-shadow 0.3s ease;
-     font-size: 1rem;
-     padding: 1em;
-     font-family: 'Roboto', sans-serif;
-     line-height: 1.5;
-     border-radius: 8px;
- 
- }
-
-     textarea {
-        width: 35%; /* Define a largura dos campos de entrada de texto para 80% */
-        padding: 25px; /* Adiciona preenchimento interno aos campos */
-        font-size: 14px; /* Define o tamanho da fonte */
-    }
-    header {
-        margin: 50px
-            padding: 3px;
-    font-family: 'Roboto', sans-serif;}
-    textarea {
-        height: 150px; /* Define uma altura fixa para o campo de mensagem */
-    }
-    input[type="text"],
-    input[type="email"] {
-        width: 30%; /* Define a largura dos campos de entrada de texto para 80% */
-        padding: 20px; /* Adiciona preenchimento interno aos campos */
-        font-size: 14px; /* Define o tamanho da fonte */
-    }
- ul{
-     display: flex;
-     justify-content: space-between;
-     list-style-type: none;
-     align-items: center;
-     padding: 18px;
- }
-
-
- .container {
-    padding: 0px 50px;
-    justify-content: space-between;
-    background-color: black;
-    display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    padding: 8px 10px;
-    line-height: 50px;
-    transition: 0,8px;
-
-}
-.telefone {
-    font-size: 14px;
-    margin: 90px;
-}
-nav a:hover {
-    color: black
-}
-
-
-a {
-    color: black;
-    text-decoration: none;
-}
-button {
+    margin: 0;
+    padding: 3px;
+    font-family: 'Roboto', sans-serif;
     background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 35px;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
+    margin: 45px;
+    border-radius: 0px; 
+    height: 60px;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li button {
+    background-color: black;
+    color: white;
+    padding: 5px 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+    height: 50px;
     transition: box-shadow 0.3s;
     font-family: 'Roboto', sans-serif;
+    margin-right: 290px; /* Espaço entre os botões */
+    display: inline-block;
+    border: 0;
+
+}
+ nav a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+    display: inline-block;
+    padding: 9px 24px;
+    line-height: 30px;
+    transition: 0,8px;
+    border-radius: 16px;
+
+ }
+ nav a:hover {
+    color: black;
 }
 
-      h1 {
-        font-size: 50px;
-        margin: 50px;
-        padding: 3px;
-        font-family: 'Roboto', sans-serif;
-    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 80px;
+}
 
-    h3{
-        font-size: 15px;
-        font-family: 'Roboto', sans-serif;
-    margin: 10;}
-h4{
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-margin: 5;}
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    max-width: 100%;
+}
 
-    input {
-        margin: 10px;
-        padding-left: 30px;
-    }
+form {
+    margin-top: 20px;
+}
 
-    label{
-        padding: 10px;
-        font-family: 'Roboto', sans-serif;
-    }
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
-    .botton-secundario {
-        background-color: black;
-        font-family: 'Roboto', sans-serif; color: white;
-        padding: 10px;
-        margin: 20px;
-        border-radius: 4px;
-        border: 2px;
-        border-bottom: 30px;
-    }
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
-    footer {
-        background-color: white;
-        text-align: center;
-        border-top: 2px solid black; /* Adiciona uma borda superior */
-        padding: 20px;
-    }
+button.botton-secundario {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.botton-secundario:hover {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid black;
+    color: black;
+}
