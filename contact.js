@@ -6,11 +6,16 @@ document.getElementById('form-contato').addEventListener('submit', function(even
     var email = document.getElementById('email').value;
     var mensagem = document.getElementById('message').value;
 
+    if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
+        alert('Por favor, preencha todos os campos');
+        return;
+    }
+
     // Constrói o objeto de dados para enviar
     var dados = {
         name: nome,
         email: email,
-        mensagem: nachricht
+        message: mensagem // Corrigido o nome da variável
     };
 
     // Envia os dados para o serviço de e-mail usando EmailJS
