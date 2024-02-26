@@ -46,6 +46,13 @@ button {
     font-family: 'Roboto', sans-serif;
 }
 
+h1{
+    text-align: initial;
+    box-sizing: border-box;
+    margin: 5px;
+    padding-left: 580px;
+    font-family: 'Roboto', sans-serif;}
+
 footer {
     background-color: white;
     text-align: center;
