@@ -39,17 +39,11 @@ nav ul li {
     font-family: 'Roboto', sans-serif;
     border: 0;
     border-radius: 8px;
-    text-decoration: none;
 }
 
-button:hover {
-    color: black;
-    text-decoration: none; /* Remover sublinhado do botão no hover */
-}
  
  nav a:hover {
     color: black;
-    text-decoration: none; 
 }
 
 .container {
