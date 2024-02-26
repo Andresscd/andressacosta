@@ -15,17 +15,23 @@ header {
     height: 60px;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+    
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0
+;
 
 }
 
 nav ul li {
     display: inline;
-    margin: 150px}
+    margin: 150px
+
+}
 
  button {
     background-color: white;
@@ -39,6 +45,8 @@ nav ul li {
     font-family: 'Roboto', sans-serif;
     border: 0;
     border-radius: 8px;
+    text-decoration: none;
+
 }
 
  
