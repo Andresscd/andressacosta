@@ -26,7 +26,6 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 150px}
-    text-decoration: none; 
 
  button {
     background-color: white;
@@ -43,6 +42,10 @@ nav ul li {
     text-decoration: none;
 }
 
+button:hover {
+    color: black;
+    text-decoration: none; /* Remover sublinhado do botão no hover */
+}
  
  nav a:hover {
     color: black;
