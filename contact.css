@@ -26,6 +26,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 150px}
+    text-decoration: none; 
 
  button {
     background-color: white;
