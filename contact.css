@@ -3,6 +3,8 @@ body {
     padding: 3px;
     font-family: 'Roboto', sans-serif;
     background-color: white;
+    text-decoration: none;
+
 }
 
 header {
