@@ -66,7 +66,7 @@ nav ul li button {
     display: flex;
     justify-content: center;
     align-items: center;
-   margin: 80px;
+   margin: 100px;
 }
 
 .header {
@@ -75,17 +75,19 @@ nav ul li button {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 500px;
-    max-width: 100%;
+    width: 600px;
+    height: 500px;
 }
 
 form {
+    width: 80%;
     margin-top: 20px;
+    
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin: 20px;    
 }
 
 input[type="text"],
