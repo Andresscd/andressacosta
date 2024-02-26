@@ -9,12 +9,13 @@ body {
     background-color: black;
     display: inline-block;
     text-decoration: none;
-    width: 100%;
+    width: 90%;
     padding: 8px;
-    line-height: 60px;
+    line-height: 50px;
     transition: 0,8px;
     margin: 50px;
 }
+
 nav a:hover {
    color: black
 
@@ -38,9 +39,17 @@ button {
     border: none;
     border-radius: 8px; 
     cursor: pointer;
-    width: 130px;
+    width: 150px;
     height: 50px;
     font-size: 16px;
     transition: box-shadow 0.3s;
     font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid black;
+    color: black;
 }
