@@ -105,6 +105,7 @@ nav a:hover {
 footer {
     background-color: white;
     text-align: center;
-    border-top: 2px solid black; /* Adiciona uma borda superior */
     padding: 20px;
+    border-top: 2px solid black;
+    color: black;
 }
