@@ -28,11 +28,10 @@ ul{
 }
 
 h1{
-    text-align: initial;
-    box-sizing: border-box;
+    text-align: center;
     margin: 5px;
-    padding-left: 580px;
     font-family: 'Roboto', sans-serif;}
+
 h2{
     padding-left: 113px;
     margin: 10px;
