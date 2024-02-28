@@ -1,30 +1,41 @@
-document.getElementById('form-contato').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio padrão do formulário
+const nodemailer = require('nodemailer');
 
-    // Recupera os dados do formulário
-    var nome = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var mensagem = document.getElementById('message').value;
-
-    if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
-        alert('Por favor, preencha todos os campos');
-        return;
+const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: 'andressadessacosta@gmail.com',
+        pass: 'Eudessacosta1'
     }
+});
 
-    // Constrói o objeto de dados para enviar
-    var dados = {
-        name: nome,
-        email: email,
-        message: mensagem // Corrigido o nome da variável
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+
+// Middleware para analisar dados de formulário
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.post('/enviar-email', (req, res) => {
+    const { name, email, message } = req.body;
+
+    const mailOptions = {
+        from: 'andressadessacosta@gmail.com',
+        to: 'andressadessacostagmail.com',
+        subject: 'KontaktFormular',
+        text: `Name: ${name}\nEmail: ${email}\nMensagem: ${message}`
     };
 
-    // Envia os dados para o serviço de e-mail usando EmailJS
-    emailjs.send('service_andressa', 'template_andressac', dados)
-    .then(function(response) {
-        console.log('E-mail enviado com sucesso:', response);
-        alert('E-mail enviado com sucesso!');
-    }, function(error) {
-        console.error('Ocorreu um erro ao enviar o e-mail:', error);
-        alert('Ocorreu um erro ao enviar o e-mail.');
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error(error);
+            res.status(500).send('Erro ao enviar email');
+        } else {
+            console.log('Email enviado: ' + info.response);
+            res.status(200).send('Email enviado com sucesso');
+        }
     });
+});
+
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
 });
