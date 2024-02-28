@@ -1,5 +1,13 @@
 const nodemailer = require('nodemailer');
+const express = require('express');
+const bodyParser = require('body-parser');
 
+const app = express();
+
+// Middleware para analisar dados de formulário
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Configuração do Nodemailer
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
@@ -8,19 +16,13 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-
-// Middleware para analisar dados de formulário
-app.use(bodyParser.urlencoded({ extended: false }));
-
+// Rota para enviar email quando o formulário de contato é submetido
 app.post('/enviar-email', (req, res) => {
     const { name, email, message } = req.body;
 
     const mailOptions = {
         from: 'andressadessacosta@gmail.com',
-        to: 'andressadessacostagmail.com',
+        to: 'andressadessacosta@gmail.com', // Corrigido o endereço de email de destino
         subject: 'KontaktFormular',
         text: `Name: ${name}\nEmail: ${email}\nMensagem: ${message}`
     };
@@ -36,6 +38,7 @@ app.post('/enviar-email', (req, res) => {
     });
 });
 
+// Iniciar o servidor na porta 3000
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
