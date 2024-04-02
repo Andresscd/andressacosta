@@ -86,7 +86,6 @@ a{
 .header {
     background-color: black;
     color: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 600px;
@@ -126,6 +125,8 @@ button.botton-secundario {
     cursor: pointer;
     margin: 20px;
     transition: 0.3s ease;
+    margin-bottom: 100px;
+
 }
 
 button.botton-secundario:hover {
@@ -134,7 +135,7 @@ button.botton-secundario:hover {
 
 footer {
     background-color: rgb(0, 0, 0);
-    border-top: 2px solid black;
+    border-top: 180px solid black;
     color: rgb(255, 255, 255);
     font-family: 'Press Start 2P', sans-serif; /* Adicionando a fonte do Google Fonts */
     font-size: 10px;
