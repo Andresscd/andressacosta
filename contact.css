@@ -24,10 +24,12 @@ header {
 
     
 }
+
 h2{
     font-family: 'Press Start 2P', sans-serif; 
-
+    margin-bottom: 80px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0
