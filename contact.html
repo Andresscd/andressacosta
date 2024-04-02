@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDRESSA COSTA</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gruppo&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("kYZb0zKSJNQtnTQy4");
+       })();
+    </script>
+</head>
+
+<body>
+    <header> 
+        <nav>
+            <a href="index.css"><button>Home</button></a>
+            <a href="sobre.html"><button>Über mich</button></a>
+        <a href="project.html"><button>Projekt</button></a>
+         <a href="contact.html"><button>Kontakt</button></a>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header"> 
+            <h2>KontaktFormular</h2>
+
+            <form action="mailto:andressadessacosta@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <textarea id="name" name="name" required placeholder="Gib deinen Namen ein."></textarea> <br>
+            
+                <label for="email">E-mail:</label>
+                <textarea id="email" name="email" required placeholder="Geben Sie Ihre E-mail ein."></textarea> <br>
+            
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Schreibe deine Nachricht."></textarea> <br>
+            
+                <button class="botton-secundario">Senden</button>
+            </form>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Andressa Rodrigues Costa. </p>
+
+       <p>E-Mail: andressadessacosta@gmail.com</p>
+       <p>Telefonnummer: ± 49 15750991980 </p>
+    </footer>
+</body>
+</html>
