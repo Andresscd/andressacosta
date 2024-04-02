@@ -29,14 +29,17 @@
     </nav>
     </div>
 
-    <script>function toggleDropdown() {
-    var dropdownContent = document.getElementById("myDropdown");
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
+    <script> // evento de clique ao elemento .dropdown para dispositivos móveis
+document.querySelector('.dropdown').addEventListener('click', function() {
+    // Se o menu estiver visível, oculte-o; caso contrário, exiba-o
+    var dropdownContent = document.querySelector('.dropdown-content');
+    if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
     } else {
-        dropdownContent.style.display = "block";
+        dropdownContent.style.display = 'block';
     }
-}
+});
+
     </script>
 
     <h1 id="nome">Andressa Costa...</h1>
