@@ -1,5 +1,5 @@
 .dropdown {
-padding: 6%;
+padding: 8%;
 color: #ddd;
 position: relative;
 display: inline-block;
@@ -106,7 +106,7 @@ footer {
 
 h1#nome {
     font-family: 'Press Start 2P', sans-serif; /* Adicionando a fonte do Google Fonts */
-    font-size: 46px;
+    font-size: 40%;
     color: white; /* Cor do texto */
     text-align: center;
     padding: 12%;
