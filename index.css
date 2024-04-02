@@ -94,7 +94,7 @@ button {
 }
 
 footer {
-    padding: 15%;
+    padding: 18%;
     border-top: 2px solid black;
     color: white;
     position: absolute;
@@ -106,10 +106,10 @@ footer {
 
 h1#nome {
     font-family: 'Press Start 2P', sans-serif; /* Adicionando a fonte do Google Fonts */
-    font-size: 40%;
+    font-size: 48%;
     color: white; /* Cor do texto */
     text-align: center;
-    padding: 12%;
+    padding: 14%;
     white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
    cursor: all-scroll;
    overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
