@@ -144,10 +144,10 @@ h1#nome::after {
       border-bottom: none;
   }
   .h1#home {
-    font-size: 180%;
+    font-size: 100%;
     text-align: center;
-    padding: 25%;
-    margin: 5%;
+    padding: 35%;
+    margin: 15%;
    white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
    cursor: all-scroll;
    overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
@@ -163,7 +163,7 @@ h1#nome::after {
     bottom: 0; /* Alinha o cursor à parte inferior do elemento pai */
 }
   
-  body {  font-weight: 400;
+  body {  font-weight: 200;
        }
 
 @keyframes digitar {
