@@ -127,11 +127,12 @@ h1#nome::after {
 
 /* Definindo a animação de digitação */ 
   
-    @keyframes digitar {
-        0%, 10% 20%, 40%, 60%, 80 { width: 0; } /* Define a largura como zero para mostrar o cursor menor */
-       10%, 20%, 30%, 40%, 50%, 60%,70% { width: 70%; } /* Define a largura como 100% para mostrar a letra */
-        60% { width: 60%; border-right: none; } /* Garante que o cursor desapareça no final */
-    }
+  @keyframes digitar {
+    0%, 10%, 20%, 40%, 60%, 80% { width: 0; } 
+    10%, 20%, 30%, 40%, 50%, 60%, 70% { width: 70%; } 
+    60% { width: 60%; border-right: none; } /* Garante que o cursor desapareça no final */
+}
+
         
 
        
