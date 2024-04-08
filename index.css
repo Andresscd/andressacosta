@@ -118,7 +118,8 @@ h1#nome {
     animation: digitar 20s steps(20, end) forwards; /* Aplica a animação de digitação */
     border-right: 3px solid; /* Adiciona um efeito de cursor ao final da letra digitada */
     width: 5px;
-;}
+}
+
 h1#nome::after {
     content: ''; /* Adiciona um elemento de pseudo-classe para representar o cursor */
     animation: cursor-blink 1s infinite step-start; /* Aplica a animação de piscar ao cursor e looping */
@@ -172,15 +173,17 @@ h1#nome::after {
   .h1#home {
     font-size: 180%;
     text-align: center;
-    padding: 20%;
-    margin: 5%;
-    white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
+    padding: 5%;
+    margin: 2%;
+   white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
    cursor: all-scroll;
    overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
     animation: digitar 20s steps(20, end) forwards; /* Aplica a animação de digitação */
     border-right: 3px solid; /* Adiciona um efeito de cursor ao final da letra digitada */
     width: 5px;
-;}
+    display: flex;
+}
+  
 h1#nome::after {
     content: ''; /* Adiciona um elemento de pseudo-classe para representar o cursor */
     animation: cursor-blink 1s infinite step-start; /* Aplica a animação de piscar ao cursor e looping */
