@@ -35,12 +35,6 @@ display: inline-block;
 
    }
 
-
-
-
-
-
-
 body {
   color: black;
   background-color: black;
@@ -50,18 +44,6 @@ body {
   animation:  0.6s ease-in-out; /* ajuste a duração conforme necessário */
 
     }
-
- .container {
-    justify-content: space-between;
-    background-color: black;
-    display: inline-block;
-    text-decoration: none;
-    width: 90%;
-    padding: 8px;
-    line-height: 50px;
-    transition: 08px;
-    margin: 50px;
-}
 
 nav a:hover {
    color: black
@@ -189,6 +171,9 @@ h1#nome::after {
     animation: cursor-blink 1s infinite step-start; /* Aplica a animação de piscar ao cursor e looping */
     bottom: 0; /* Alinha o cursor à parte inferior do elemento pai */
 }
+  
+  body {  font-weight: 400;
+       }
 
 @keyframes digitar {
   0%, 10%, 20%, 40%, 60%, 80% { width: 0; } /* Define a largura como zero para mostrar o cursor menor */
