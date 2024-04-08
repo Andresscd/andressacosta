@@ -57,11 +57,11 @@ nav a:hover {
 button {
     background-color: white;
     border: none;
-    border-radius: 8px; 
+    border-radius: 8%; 
     cursor: pointer;
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
+    width: 150%;
+    height: 50%;
+    font-size: 16%;
     transition: box-shadow 0.3s;
     font-family: 'Roboto', sans-serif;
 }
@@ -146,8 +146,8 @@ h1#nome::after {
   .h1#home {
     font-size: 180%;
     text-align: center;
-    padding: 5%;
-    margin: 2%;
+    padding: 25%;
+    margin: 5%;
    white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
    cursor: all-scroll;
    overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
