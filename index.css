@@ -155,4 +155,20 @@ h1#nome::after {
     100% { opacity: 1; transform: translateY(0); }
   } 
 
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+  .dropdown-content {
+      position: static;
+      display: none;
+  }
+  .dropdown-content a {
+      text-align: center;
+  }
+  .dropdown-content a:last-child {
+      border-bottom: none;
+  }
+}
+
  
