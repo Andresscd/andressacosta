@@ -27,7 +27,10 @@ header {
 }
 h1{
     font-family: 'Press Start 2P', sans-serif; 
-
+    color: white;
+    padding: 1%;
+    font-size: 150%;
+    text-align: center;
 
 }
 a{
@@ -92,14 +95,10 @@ footer {
 
 
 img  {
-    background-color: white;
-    align-items: center;
     width: 50%;
     height: 50%;
     position: relative;
     margin: 50px;
-    animation-duration: 5s;
-    animation-name: snakeMove;
 
 }
 
