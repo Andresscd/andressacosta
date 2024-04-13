@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 3px;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+header {   
+    background-color: rgb(12, 11, 11);
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    border: none;
+    margin: 50px;
+    border-radius: 0px; 
+    height: 60px;
+    font-size: 16px;
+    text-decoration: none;
+    justify-content: space-between;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    transition: 0,8px;
+
+    
+    
+}
+h1{
+    font-family: 'Press Start 2P', sans-serif; 
+
+
+}
+a{
+    list-style-type: none;
+    align-items: center;
+    padding: 18px;
+    text-decoration: none;
+    text-align: center;
+    margin: 30px
+}
+
+ button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(219, 217, 217);
+    padding: 5px 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    transition: 0.3s;
+    font-family: "Turret Road", sans-serif;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
+
+button:hover {
+    color: gray !important; /* Define a cor do texto como preta */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 500px;
+    font-family: "Turret Road", sans-serif;
+
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-top: 2px solid black;
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', sans-serif; /* Adicionando a fonte do Google Fonts */
+    font-size: 10px;
+
+}
+
+
+img  {
+    background-color: white;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 50px;
+    animation-duration: 5s;
+    animation-name: snakeMove;
+
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', sans-serif; /* Adicionando a fonte do Google Fonts */
+    border-top: 180px solid black;
+    font-size: 8px;
+
+}
