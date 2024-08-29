@@ -28,9 +28,9 @@ header {
 h2{
     font-family: 'Press Start 2P', sans-serif; 
     margin-bottom: 80px;
-    background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(0, 0, 255) 100%);
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
-}
+
 
 nav ul {
     list-style-type: none;
