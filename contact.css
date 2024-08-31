@@ -39,7 +39,14 @@ nav ul {
 }
 
 .container {
+    background-color: rgb(12, 11, 11);
     
+    max-width: 700px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 nav ul li {
