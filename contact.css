@@ -26,9 +26,10 @@ header {
 }
 
 h2{
-    font-family: 'Press Start 2P', sans-serif; 
+    text-align: center;
+     font-family: 'Press Start 2P', sans-serif; 
     margin-bottom: 80px;
-    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    background: linear-gradient(hsl(315, 76%, 16%), hsl(265, 66%, 23%), hsl(290, 56%, 42%));
 }
 
 
@@ -39,20 +40,16 @@ nav ul {
 }
 
 .container {
-    background-color: rgb(12, 11, 11);
-    
+    background-color: rgb(14, 14, 14);
     max-width: 700px; /* Largura máxima do formulário */
     margin: 0 auto; /* Centraliza o formulário horizontalmente */
     padding: 20px; /* Espaçamento interno do formulário */
-    border: 1px solid #ddd; /* Borda leve */
     border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0 ; 
+    color: rgb(219, 217, 217);
 }
 
-nav ul li {
-    display: inline;
-    margin: 300px
-}
+
 a{
     list-style-type: none;
     align-items: center;
@@ -61,6 +58,7 @@ a{
     text-align: center;
     margin: 30px
 }
+
  button {
     background-color: rgb(0, 0, 0);
     color: rgb(219, 217, 217);
@@ -88,7 +86,6 @@ a{
 }
 
 
-
 form {
     width: 80%;
     margin-top: 20px;
@@ -96,7 +93,7 @@ form {
 }
 label {
     display: block;
-    margin: 20px;    
+    margin: 5%;    
 }
 
 input[type="text"],
@@ -104,7 +101,7 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8%;
     border-radius: 20px;
     border: 2px solid #ccc;
     outline: none;
