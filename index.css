@@ -1,139 +1,166 @@
 .dropdown {
-padding: 3%;
-color: #ddd;
-position: relative;
-display: inline-block;
-             }
-
-
- .dropdown-content {
-    background: rgb(155, 153, 153);
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(249, 249, 249, 0.2);
-    z-index: 1;
-  }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    
-    }
-    
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid #ddd; /* Adiciona linha separadora */
-
- }
-    
- .dropdown-content a:hover {
-   background-color: #f1f1f1;
-
-   }
-
-body {
-  color: black;
-  background-color: black;
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  animation:  0.6s ease-in-out; /* ajuste a duração conforme necessário */
-
- }
-
-a {
-   color: black;
-   text-decoration: none;
-}
-nav a:hover {
-   color: black
-
-}
-
-button {
-    background-color: white;
-    border: none;
-    border-radius: 8%; 
-    cursor: pointer;
-    width: 150%;
-    height: 50%;
-    font-size: 16%;
-    transition: box-shadow 0.3s;
-    font-family: 'Roboto', sans-serif;
-}
-
-footer {
-    border-top: 2px solid black;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0px; 
-    padding: 5%;
-}
-
-
-
-
-h1#nome {
-    font-family: 'Press Start 2P', sans-serif; /* Adicionando a fonte do Google Fonts */
-    font-size: 350%;
-    color: white; /* Cor do texto */
-    text-align: center;
-    padding: 10%;
-    white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
-   cursor: all-scroll;
-   overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
-    animation: digitar 20s steps(20, end) forwards; /* Aplica a animação de digitação */
-    border-right: 3px solid; /* Adiciona um efeito de cursor ao final da letra digitada */
-    width: 5px;
-}
-
-h1#nome::after {
-    content: ''; /* Adiciona um elemento de pseudo-classe para representar o cursor */
-    animation: cursor-blink 1s infinite step-start; /* Aplica a animação de piscar ao cursor e looping */
-    bottom: 0; /* Alinha o cursor à parte inferior do elemento pai */
-}
-
-/* Definindo a animação de digitação */ 
+  padding: 3%;
+  color: #c9c7c7;
+  position: relative;
+  display: inline-block;
+               }
   
+  
+   .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 120%;
+      box-shadow: 0 8px 16px 0 rgba(249, 249, 249, 0.2);
+      z-index: 1;
+    }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+      
+      }
+      
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #ddd; /* Adiciona linha separadora */
+  
+   }
+      /* cor ao passar o mouse no menu*/
+   .dropdown-content a:hover {
+     background-color: #202020;
+  
+     }
+  
+  
+  
+  
+     .menu-icon {
+      display: flex; /* Faz com que as barras fiquem em coluna */
+      flex-direction: column; /* Empilha as barras verticalmente */
+      justify-content: space-around; /* Espaço uniforme entre as barras */
+      width: 32px; /* Largura do ícone */
+      height: 28px; /* Altura do ícone */
+      cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  }
+  
+  .menu-icon .linha {
+      width: 100%; /* Barra ocupa toda a largura do contêiner pai */
+      height: 5px; /* Altura de cada barra */
+      background-color: #333; /* Cor de fundo das barras */
+      border-radius: 5px; /* Bordas arredondadas */
+      transition: all 0.3s ease; /* Transição suave para animações */
+  }
+  
+  .menu-open .menu-icon .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-open .menu-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open .menu-icon .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+  body {
+    color: black;
+    background-color: black;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    animation:  0.6s ease-in-out; /* ajuste a duração conforme necessário */
+  
+      }
+  
+   
+  
+  nav a:hover {
+     color: black
+  
+  }
+  
+ 
+  a {
+     color: black;
+     text-decoration: none;
+  }
+  
+  
+  button {
+      background-color: white;
+      border: none;
+      border-radius: 8%; 
+      cursor: pointer;
+      width: 150px;
+      height: 50%;
+      font-size: 16%;
+      transition: box-shadow 0.3s;
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  footer {
+      border-top: 2px solid black;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0px; 
+      padding: 5%;
+  }
+  
+  
+  
+  
+  h1#nome {
+      font-family: 'Press Start 2P', sans-serif; /* Adicionando a fonte do Google Fonts */
+      font-size: 350%;
+      color: white; /* Cor do texto */
+      text-align: center;
+      padding: 10%;
+      white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
+     cursor: all-scroll;
+     overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
+      animation: digitar 20s steps(20, end) forwards; /* Aplica a animação de digitação */
+      border-right: 3px solid; /* Adiciona um efeito de cursor ao final da letra digitada */
+      width: 5px;
+  ;}
+  h1#nome::after {
+      content: ''; /* Adiciona um elemento de pseudo-classe para representar o cursor */
+      animation: cursor-blink 1s infinite step-start; /* Aplica a animação de piscar ao cursor e looping */
+      bottom: 0; /* Alinha o cursor à parte inferior do elemento pai */
+  }
+  
+  /* Definindo a animação de digitação */ 
   @keyframes digitar {
-    0%, 10%, 20%, 40%, 60%, 80% { width: 0; } 
-    10%, 20%, 30%, 40%, 50%, 60%, 70% { width: 70%; } 
+    0%, 10%, 20%, 40%, 60%, 80% { width: 0; } /* Define a largura como zero para mostrar o cursor menor */
+    10%, 20%, 30%, 40%, 50%, 60%, 70% { width: 70%; } /* Define a largura como 100% para mostrar a letra */
     60% { width: 60%; border-right: none; } /* Garante que o cursor desapareça no final */
 }
 
-        
-
-       
-        
-
-@keyframes shake  {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(10px); }
-    50% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
-    100% { transform: translateX(0); }
-  }
   
-  .shake-element {
-    animation: shake 0.2s ease-in-out; /* ajuste a duração conforme necessário */
-  }
+         
+          
   
-  @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  } 
-
-@keyframes digitar {
-  0%, 10%, 20%, 40%, 60%, 80% { width: 0; } /* Define a largura como zero para mostrar o cursor menor */
-  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% { width: 100%; } /* Define a largura como 100% para mostrar a letra */
-  60% { width: 60%; border-right: none; } /* Garante que o cursor desapareça no final */
-
+  @keyframes shake  {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(10px); }
+      50% { transform: translateX(-10px); }
+      75% { transform: translateX(10px); }
+      100% { transform: translateX(0); }
+    }
+    
+    .shake-element {
+      animation: shake 0.2s ease-in-out; /* ajuste a duração conforme necessário */
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    } 
 
 @media only screen and (max-width: 768px) {
   .menu-icon {
@@ -148,30 +175,34 @@ h1#nome::after {
   }
   .dropdown-content a:last-child {
       border-bottom: none;
-  }
+
+  } 
   .h1#home {
-    font-size: 50%;
+    font-size: 250%;
     text-align: center;
-    padding: 55%;
-    margin: 35%;
-    cursor: all-scroll;
-    overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
+    padding: 25%;
+    margin: 5%;
+    white-space: nowrap; /* Evita que as letras quebrem em várias linhas */
+   cursor: all-scroll;
+   overflow:hidden; /* Esconde o conteúdo que extrapola a largura do elemento */
     animation: digitar 20s steps(20, end) forwards; /* Aplica a animação de digitação */
     border-right: 3px solid; /* Adiciona um efeito de cursor ao final da letra digitada */
-    display: flex;
-}
-  
+    width: 5px;
+    display: flex
+;}
 h1#nome::after {
     content: ''; /* Adiciona um elemento de pseudo-classe para representar o cursor */
     animation: cursor-blink 1s infinite step-start; /* Aplica a animação de piscar ao cursor e looping */
     bottom: 0; /* Alinha o cursor à parte inferior do elemento pai */
 }
-  
-  body {  font-weight: 200;
-       }
 
+@keyframes digitar {
+  0%, 10%, 20%, 40%, 60%, 80% { width: 0; } /* Define a largura como zero para mostrar o cursor menor */
+  10%, 20%, 30%, 40%, 50%, 60%, 70% { width: 70%; } /* Define a largura como 100% para mostrar a letra */
+  60% { width: 60%; border-right: none; } /* Garante que o cursor desapareça no final */
 
   }
+}
 }
 }
 
